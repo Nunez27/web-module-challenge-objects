@@ -17,8 +17,10 @@ The function should:
 
 function createMenuItem(name, price, category){
     /*Your code here*/
-    return {name, price, category};
+    let newObject = {name, price, category};
+    return newObject
 }
+console.log(createMenuItem('tacos', 10, 'lunch'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
@@ -60,9 +62,9 @@ export const burger = {
     }else {
       return `No Discount`
     }
+  }
 }
-}
-
+console.log(burger.discount('student'));
 
 
 ///////////////Reviews (MVP)///////////////////
@@ -144,7 +146,7 @@ Use the getLastReview function below to do the following:
 
 function getLastReview(array) {
   // let lastReview = array[array.length - 1]
-  // return `${lastReview.name} gave the restaurant a ${lastReview.rating} star review, and their feedback was: ${lastReview.feedback}`
+  return `${array[array.length - 1].name} gave the restaurant a ${array[array.length - 1].rating} star review, and their feedback was: ${array[array.length - 1].feedback}`
 } 
 
 
@@ -165,7 +167,7 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
+ function getReviewByRating(array, rating) {
     /* code here */
   }
 
